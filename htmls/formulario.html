@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css's/estiloPagina.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--barra navegacion-->
+    <div class="fixed-top">
+    
+        <div class="contain row">
+          <div class="conteiner text-light bg-danger">
+            <img src="../img/escudoRiver.png" name="River Plate" alt="River Plate" class="img-fluid float-left position-absolute" width="100px" id="imagenEscudoCabecera">
+            <h1 style="font-family: 'Russo One', sans-serif;" class="text-center">River Plate</h1>
+          </div>
+    
+          <div class="container-fluid text-center bg-danger"> 
+              <ul class="nav nav-tabs justify-content-center">
+                  <li class="nav-item listasNavegacion">
+                      <a class="barraPrincipal" href="../htmls/home.html">PRINCIPAL</a>
+                  </li>
+                  <li class="nav-item listasNavegacion">
+                      <a class="barraPrincipal" href="../htmls/noticias.html">NOTICIAS</a>
+                  </li>
+                  <li class="nav-item listasNavegacion">
+                      <a class="barraPrincipal" href="../htmls/fotos.html">FOTOS</a>
+                  </li>
+                  <li class="nav-item listasNavegacion">
+                      <a id="ingresar" class="barraPrincipal" href="">INGRESAR</a>
+                  </li>
+                  <li class="nav-item listasNavegacion">   
+                      <a class="barraPrincipal" href="#contacto">CONTACTO</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <div id="bienvenida" class="container text-center" style="margin-top: 150px;">
+        
+    </div>
+    
+    <!--formulario-->
+    
+    <div id="formulario" class="text-center" style="margin-top: 150px; margin-bottom: 100px;">
+        <h1>Ingresar</h1>
+        <form action="">
+            <label for="nombre">Nombre</label><br>
+            <input id="nombre" type="text" name="nombre"><br>
+            <label for="apellido">Apellido</label><br>
+            <input id="apellido" type="text" name="apellido"><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input id="contrasena" type="password"><br>
+            <br><input type="button" value="Enviar" class="btn btn-danger" onclick="validarFormulario()">
+        </form>
+    </div>
+
+    
+
+       <!-- pie -->
+       <div class="container-fluid p-3 bg-danger">
+        <div class="redes">
+        <ul>
+            <li  class="d-inline">
+            <a href="https://www.facebook.com/riverplateoficial"><img class="tamanoredes" src="../img/contacto/ico-facebook.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-instagram.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-twitter.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-youtube.svg" alt=""></a>
+            </li>
+        </ul>
+            <a name="contacto">
+                <p class="text-light tamanoContacto">
+                    Club Atlético River Plate, Asoc. Civil © 2021 Todos los derechos reservados. 
+                    Av. Figueroa Alcorta 7597 (C1424BCL) CABA, Buenos Aires, Argentina. Contacto: 
+                    Informes: (54 11) 4789-1200 • club@cariverplate.com.ar
+                </p>
+            </a>
+
+        </div>
+    
+    </div>
+
+    <script src="../js's/formulario.js"></script>
+    
+</body>
+</html>

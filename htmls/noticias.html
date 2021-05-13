@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css's/estiloPagina.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!--barra navegacion-->
+  <div class="fixed-top">
+    
+    <div class="contain row">
+      <div class="conteiner text-light bg-danger">
+        <img src="../img/escudoRiver.png" name="River Plate" alt="River Plate" class="img-fluid float-left position-absolute" width="100px" id="imagenEscudoCabecera">
+        <h1 style="font-family: 'Russo One', sans-serif;" class="text-center">River Plate</h1>
+      </div>
+
+      <div class="container-fluid text-center bg-danger"> 
+          <ul class="nav nav-tabs justify-content-center">
+              <li class="nav-item listasNavegacion">
+                  <a class="barraPrincipal" href="../htmls/home.html">PRINCIPAL</a>
+              </li>
+              <li class="nav-item listasNavegacion">
+                  <a class="barraPrincipal" href="">NOTICIAS</a>
+              </li>
+              <li class="nav-item listasNavegacion">
+                  <a class="barraPrincipal" href="../htmls/fotos.html">FOTOS</a>
+              </li>
+              <li class="nav-item listasNavegacion">
+                  <a id="ingresar" class="barraPrincipal" href="../htmls/formulario.html">INGRESAR</a>
+              </li>
+              <li class="nav-item listasNavegacion">   
+                  <a class="barraPrincipal" href="#contacto">CONTACTO</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--noticias-->
+  <div class="container" style="margin-top: 150px;">
+    <div class="row">
+        
+      <div class="col-md-12 text-center bg-danger border border-secondary">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-vs.-Aldosivi-el-minuto-a-minuto-por-la-Copa-de-la-Liga-Profesional-desde-el-Monumental-20210509-0009.html">
+            <h1 style="font-family: 'Bebas Neue', cursive;">!River gano y se clasifico a cuartos¡</h1>
+            
+            <img class="imagenNoticiaUno" src="../img/Noticias/gettyimages-1232793063_crop1620589056006.jpg_1693159006.jpg" alt="">
+            <p style="font-family: 'Amiri', serif;"><blockquote cite="https://lapaginamillonaria.com">
+              <strong>El equipo de Marcelo Gallardo recibió al Tiburón por la fecha 13 de la Copa de la Liga Profesional y
+              <br> le ganó bien por 4 a 1. Montiel de penal, Borré, 
+              Paradela y Suárez los autores de los goles.</strong> </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div onmouseover="mostrarNoticia1()" onmouseout="ocultarNoticia1()">
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Jose-Paradela-del-reto-de-Marcelo-Gallardo-a-su-segundo-gol-en-River-20210509-0021.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/para.jpg" alt="">
+              <p>
+                <blockquote cite="https://lapaginamillonaria.com">
+                  <h2 style="font-family: 'Bebas Neue', cursive;"><strong>Paradela, del reto de Gallardo al gol </strong></h2>
+                </blockquote>
+              </p>
+          </a>
+        </div>
+      </div>
+        
+      <div  class="col-md-6 text-center bg-danger border border-secondary" style="margin-top: 20px;"> 
+        <div onmouseover="mostrarNoticia2()" onmouseout="ocultarNoticia2()">
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Rafael-Santos-Borre-corto-una-racha-de-cinco-partidos-sin-convertir-en-River-20210509-0020.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/borre.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h2 style="font-family: 'Bebas Neue', cursive;"><strong>Borré cortó una racha negativa en un partido clave </strong></h2>
+                
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div  class="col-md-6"> 
+        <div>
+          <p id="noticia1" style="font-family: 'Amiri', serif;display: none;">
+            El ex volante de Gimnasia ingresó para jugar el segundo tiempo pero en un principio no convenció a 
+              <br> Gallardo que amenazó con sacarlo, minutos más tarde convirtió el tercer tanto del Más Grande ante Aldosivi. 
+          </p>
+        </div>
+      </div>
+
+      <div  class="col-md-6"> 
+        <div>
+          <p id="noticia2" style="font-family: 'Amiri', serif;display: none;">El artillero colombiano no estaba fino en la definición y hacía cinco partidos que no la metía, pero ante 
+            <br> Aldosivi apareció en el momento preciso y convirtió un tanto que lo ubica como máximo goleador de la Zona A.</p>
+        </div>
+      </div>
+        
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-tercero-clasificado-a-cuartos-de-final-boca-talleres-posible-rival-tabla-de-posiciones-20210509-0014.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/mon.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>River, tercero: enfrentará a Boca o Talleres</strong></h3>
+                <p style="font-family: 'Amiri', serif;">El equipo de Gallardo logró la clasificación a cuartos de final 
+                  <br> y deberá esperar hasta la noche para conocer cuál será su rival. ¿Habrá superclásico?</p>
+              </blockquote>
+            </p>
+          </a>
+        </div> 
+      </div> 
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Hector-David-Martinez-jugador-de-River-hablo-luego-del-triunfo-ante-Aldosivi-en-el-Monumental-y-admitio-que-le-gustaria-jugar-con-Boca-en-cuartos-de-final-20210509-0017.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/martinez.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>Martínez: "Me encantaría jugar contra Boca en cuartos"</strong></h3>
+                <p style="font-family: 'Amiri', serif;">Hector David Martínez fue uno de los puntos altos de River en la goleada ante Aldosivi y 
+                  <br> el defensor ya palpitó un hipotético cruce en cuartos ante Boca.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Franco-Armani-Enzo-Perez-y-Paulo-Diaz-son-los-tres-futbolistas-de-River-que-mas-jugaron-en-2021-20210503-0006.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/tres.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>Tres jugadores de River entre los que más jugaron en el año</strong></h3>
+                <p style="font-family: 'Amiri', serif;">El Más Grande atraviesa un momento de desgaste físico producto de la doble competencia, 
+                  <br> el Muñeco todavía no recurrió a la famosa rotación y el cansancio se empieza a notar.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Marcelo-Gallardo-se-fue-sin-hablar-del-Florencio-Sola-tras-la-derrota-de-River-contra-Banfield-por-la-Copa-de-la-Liga-20210502-0020.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/gallardo.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>Gallardo se fue otra vez sin hablar </strong></h3>
+                <p style="font-family: 'Amiri', serif;">El Más Grande cayó por segundo partido consecutivo por la Copa de la Liga Profesional, complicó sus 
+                  <br> chances de avanzar a cuartos de final y nuevamente el Muñeco se retiró del estadio sin brindar declaraciones.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-vs.-Banfield-el-minuto-a-minuto-por-la-Copa-de-la-Liga-Profesional-20210502-0003.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/perdioban.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>River perdió contra Banfield y se complicó solo</strong></h3>
+                <p style="font-family: 'Amiri', serif;">El equipo de Marcelo Gallardo visitó al Taladro en el Florencio Sola. Jugó un buen primer tiempo y pudo 
+                 <br> ponerse en ventaja, pero no pudo y en la segunda mitad pagó caro un error y se quedó con las manos vacías</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-vs-Banfield-por-la-Copa-de-la-Liga-Profesional--Horario-dia-y-canal-de-TV-para-ver-EN-VIVO-online-y-gratis-el-partido-por-la-fecha-12-en-el-Estadio-Florencio-Sola-20210429-0009.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/rivervsban.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>River vs. Banfield : Día, horario y canal de TV para ver el partido por la Copa de la Liga Profesional</strong></h3>
+                <p style="font-family: 'Amiri', serif;">Con el objetivo de quedarse con un triunfo para acariciar la clasificación a la próxima ronda, River 
+                 <br> visita esta tarde a Banfield en el Estadio Florencio Sola por la 12º fecha de la Copa de la Liga Profesional.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-vs.-Banfield--Canal-de-TV-horario-y-link-de-streaming-para-ver-EN-VIVO-gratis-y-ONLINE-el-partido-por-la-Copa-de-la-Liga-Profesional-en-el-Florencio-Sola-20210501-0005.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/tvlink.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>River vs. Banfield: Dónde ver en vivo por TV y link del streaming para ver el partido por la Copa de la Liga Profesional </strong></h3>
+                <p style="font-family: 'Amiri', serif;">River visita en el Estadio Florencio Sola a Banfield por la duodécima fecha  de la Copa de la 
+                  <br> Liga Profesional, con el objetivo de ganar para quedar a un paso de cuartos de final.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Juan-Manuel-Cruz-su-paso-por-River-y-su-admiracion-por-Rafael-Santos-Borre-20210502-0004.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/juancruz.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>"Cuando me fui de River pensé que nunca más jugaría al fútbol"</strong></h3>
+                <p style="font-family: 'Amiri', serif;">Juan Manuel Cruz juega como delantero en Banfield, próximo rival de River en la Copa de la Liga. 
+                  <br> Además es hijo del Jardinero y tuvo un breve paso por la escuelita del Mas Grande que lo marcó.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/Tabla-de-posiciones-que-tiene-que-pasar-para-River-se-clasifique-a-los-cuartos-de-la-Copa-de-la-Liga-Profesional-20210502-0001.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/riverclasifique.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>¿Qué tiene que pasar para que River se clasifique a cuartos?</strong></h3>
+                <p style="font-family: 'Amiri', serif;">River visita a Banfield por la duodécima fecha de la Copa de la Liga, el objetivo es claro: ganar para mantenerse dentro de 
+                  <br> los primeros cuatro. Pero también importan otros resultados que ayudarían a poner un pie en la siguiente instancia.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/__export/1619877429222/sites/lpm/img/2021/05/01/gettyimages-1232531552_crop1619877427212.jpg_1693159006.jpg">
+            <img class="imagenNoticiaDos" src="../img/Noticias/agenda.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>Agenda cargada: los partidos que River jugará en mayo</strong></h3>
+                <p style="font-family: 'Amiri', serif;">Entre Copa de la Liga Profesional y Copa Libertadores, durante mayo el Más Grande 
+                  <br> deberá afrontar seis compromisos en 30 días y podrían ser hasta nueve. </p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-la-tabla-de-posiciones-del-Grupo-A-de-la-Copa-de-la-Liga-Profesional-Argentina-20210502-0014.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/alivio.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>Alivio para River: perdió Racing y volvió a la zona de clasificación </strong></h3>
+                <p style="font-family: 'Amiri', serif;">River depende nuevamente de sí mismo en la última fecha para ver si 
+                  <br> logra meterse entre los cuatro primeros y así clasificar a los cuartos de final.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center bg-danger border border-secondary" style="margin-top: 20px;">
+        <div>
+          <a class="barraPrincipal" href="https://lapaginamillonaria.com/riverplate/River-y-Boca-se-enfrentaria-en-los-cuartos-de-final-de-la-Copa-de-la-Liga-Profesional-20210426-0007.html">
+            <img class="imagenNoticiaDos" src="../img/Noticias/cuartosboque.jpg" alt="">
+            <p>
+              <blockquote cite="https://lapaginamillonaria.com">
+                <h3 style="font-family: 'Bebas Neue', cursive;"><strong>¿Cuál sería el rival de River en los cuartos de final de la Copa de la Liga?</strong></h3>
+                <p style="font-family: 'Amiri', serif;">Luego de los resultados que se dieron el fin de semana, el equipo de Marcelo Gallardo pasó a la tercera posición de la Zona 
+                  <br> A de la Copa de la Liga, por lo que se enfrentaría al segundo de la Zona B que es nada más y nada menos que el eterno rival.</p>
+              </blockquote>
+            </p>
+          </a>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+
+ 
+      <!-- pie -->
+      <div class="container-fluid p-3 bg-danger" style="margin-top: 30px;">
+        <div class="redes">
+        <ul>
+            <li  class="d-inline">
+            <a href="https://www.facebook.com/riverplateoficial"><img class="tamanoredes" src="../img/contacto/ico-facebook.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-instagram.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-twitter.svg" alt=""></a>
+            </li>
+            <li  class="d-inline">
+            <a href="https://www.instagram.com/riverplate/"><img class="tamanoredes" src="../img/contacto/ico-youtube.svg" alt=""></a>
+            </li>
+        </ul>
+            <a name="contacto">
+                <p class="text-light tamanoContacto">
+                    Club Atlético River Plate, Asoc. Civil © 2021 Todos los derechos reservados. 
+                    Av. Figueroa Alcorta 7597 (C1424BCL) CABA, Buenos Aires, Argentina. Contacto: 
+                    Informes: (54 11) 4789-1200 • club@cariverplate.com.ar
+                </p>
+            </a>
+
+        </div>
+    
+    </div>
+  
+  </div>
+
+  
+
+
+    
+
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <script src="../js's/formulario.js"></script>
+</body>
+</html>

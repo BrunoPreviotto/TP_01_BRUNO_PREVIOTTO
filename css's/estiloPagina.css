@@ -1,0 +1,96 @@
+
+
+
+.ultimosResultados{
+    width: 20px;
+    padding: 0%;
+}
+
+.columnasResultados{
+    margin: 10px;
+}
+
+a.barraPrincipal:link{
+    color: black;
+    text-decoration: none;
+}
+
+a.barraPrincipal:hover{
+    color: black;
+    text-decoration: none;
+}
+
+a.barraPrincipal:active{
+    color: black;
+    text-decoration: none;
+}
+
+a.barraPrincipal:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.carousel-inner img {
+    width: 10%;
+    
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+.tamanoImagenes{
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+    
+    background-color: brown;
+}
+
+.imagenNoticiaUno{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+
+.imagenNoticiaDos{
+    margin-top: 30px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.pieDePagina{
+    padding-top: 50px;
+}
+
+.listasNavegacion{
+    margin-right: 20px;
+}
+.tamanoContacto{
+    font-size: 80%;
+}
+
+.redes{
+    padding-top: 20px;
+    
+}
+
+.tamanoredes{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.imagenNoticia{
+    border: 5px double red;
+}
+
+
+
+
